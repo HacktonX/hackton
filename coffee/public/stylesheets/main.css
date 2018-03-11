@@ -30,7 +30,7 @@ body{
 }
 
 .container{
-    margin-top: 7.5% !important;
+    margin-top: 5.5% !important;
 }
 
 #navi{
@@ -42,4 +42,37 @@ body{
 #kol{
     
     
+}
+
+#searchBar{
+    
+    margin-top: 1%;
+    margin-right: 25%;
+}
+
+.PicSixe{
+    
+    width: 65px;
+    height: 65px;
+}
+
+li{
+    padding-left: 30%;
+     list-style-type: none;
+    width: 100px;
+}
+
+#DataTable{
+    
+    margin-right: 26.2%;
+}
+
+#prgSecond{
+    
+    margin-left: 37%;
+}
+
+#btnSecond{
+     margin-left: 45% !important;
+    margin-bottom: 10%;
 }
