@@ -1,68 +1,40 @@
-<!DOCTYPE html>
-<html lang="en" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="bootstrap.min.js"></script>
-    <script type="text/javascript" src="angular.js"></script>
-     <script type="text/javascript" src="index.js"></script>
+<div class="container">
+    <div class="jumbotron">
 
-    <link rel="stylesheet" href="bootstrap.min.css">
+        <p class="lead" id="prgSecond">אנא בחר רשת שאליה ברצונך לתרום:</p>
 
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-<div ng-app="MyApp" ng-controller="MainController">
- <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#" id="kol">
-    <img src="%D7%9C%D7%91-%D7%90%D7%9C-%D7%9C%D7%91.jpg" id="navi" class="d-inline-block align-top" alt="">
-    מלב אל לב
-  </a>
-</nav>
-   
-       <div class="container">
-        <div class="jumbotron">
-           
-            <p class="lead" id="prgSecond">אנא בחר רשת שאליה ברצונך לתרום:</p>
-            
-        </div>
     </div>
-    
-    <div class="input-group col-lg-6" id="searchBar">
-  <div class="input-group-prepend">
-   
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" ng-model="search">
-   <span class="input-group-text">חפש</span>
+</div>
+
+<div class="input-group col-lg-6" id="searchBar">
+    <div class="input-group-prepend">
+
+    </div>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" ng-model="search">
+    <span class="input-group-text">חפש</span>
 </div>
 
 
-<div ng-repeat="arr in names | filter: search">
- <table id="DataTable">
- <tr>    
-       <td>
-           <img src={{arr.pic}} class="rounded-circle PicSixe">
+<div ng-repeat="arr in names | filter: search" >
+    <a href="#!/ChoosePortion" > <table id="DataTable" ng-click="TakeShop(arr)">
+        <tr>
            
-           </td>
-           <td>
-               <ul>
-                 <br>
-                   <h5>{{arr.name}}</h5>
-                  <li>{{arr.ProdName1}}: {{arr.AmountProd1}}</li>
-                  <li>{{arr.ProdName2}}: {{arr.AmountProd2}}</li>
-                </ul> 
-           </td>
- </tr>
-      
- </table>
- 
- 
+            <td>
+                <img src={{arr.pic}} class="rounded-circle PicSixe">
+
+            </td>
+            <td>
+                <ul>
+                    <br>
+                    <h5>{{arr.name}}</h5>
+                    <li>{{arr.ProdName1}}: {{arr.AmountProd1}}</li>
+                    <li>{{arr.ProdName2}}: {{arr.AmountProd2}}</li>
+                </ul>
+            </td>
+        </tr>
+
+        </table></a>
+
+
 </div>
-<br>
-<br>
-<br>
-<a class="btn btn-lg btn-primary" href="Second.html" role="button" id="btnSecond">היכנס</a>
-</div>
-</body>
-</html>
+
