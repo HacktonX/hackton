@@ -1,4 +1,20 @@
-var MyApp = angular.module('MyApp',[]);
+
+var app = angular.module("MyApp", ["ngRoute"]);
+
+
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "WelcomeJumbotron.html"
+    })
+    .when("/ChooseRest", {
+        templateUrl : "Second.html"
+    })
+    .when("/ChoosePortion", {
+        templateUrl : "Third.html"
+    }) .when("/Pay", {
+        templateUrl : "Fourth.html"
+    });
 
 angular.module('MyApp', []).controller('MainController', function($scope) {
     $scope.names = [
