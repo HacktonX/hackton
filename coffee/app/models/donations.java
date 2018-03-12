@@ -7,13 +7,13 @@ public class donations {
     private String email;
     private int donationId; 
     
-    public  Store(String emailStr,int StoreIdNum,int productIdInt,int dontId){
-    setDonationId(dontId);
-    setProductId(productIdInt);
-    setStoreId(StoreIdNum);
-    setEmail(emailStr);
-    }
-    
+//    public  Store(String emailStr,int StoreIdNum,int productIdInt,int dontId){
+//    setDonationId(dontId);
+//    setProductId(productIdInt);
+//    setStoreId(StoreIdNum);
+//    setEmail(emailStr);
+//    }
+//    
     public void setEmail(String name){
     
     this.email= name;

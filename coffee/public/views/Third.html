@@ -1,23 +1,34 @@
 <div class="container">
     <div class="jumbotron">
 
-        <p class="lead" id="prgSecond">אתה בחרת לתרום לרשת:{{currShop.name}}</p>
-        <td>
-                <img src={{currShop.pic}} class="rounded-circle PicSixe" style="
-    margin-left: 500px;
-">
+        <p class="lead" id="prgSecond">אתה בחרת לתרום לרשת: <strong>{{currShop.name}}</strong></p>
+    
+               <img src="{{currShop.pic}}" class="rounded-circle PicSixe" c="" id="blabla">
 
-            </td>
+          
 
     </div>
 </div>
-            
-            <td>
-                <ul>
-                    <br>
-                    <h5>{{arr.name}}</h5>
-                    <li>{{arr.ProdName1}}: {{arr.AmountProd1}}</li>
-                    <li>{{arr.ProdName2}}: {{arr.AmountProd2}}</li>
-                </ul>
-            </td>
+<center>
+    
+<div class="container">
+    
+    <div class="row">
+        <span>
+    <div class="jumbotron" id="firstbla">
+        <h4>בחר כמות:</h4>
+        <input type="number" name="points" step="1">
+         <p class="lead" id="prgSecond"> {{currShop.ProdName1}}: {{currShop.price}}</p>
+    </div>
+        </span>
+<span>
+    <div class="jumbotron" id="secondbla">
+        <h4>בחר כמות:</h4>
+        <input type="number" name="points" step="1">
+         <p class="lead" id="prgSecond">{{currShop.ProdName2}}: {{currShop.price}}</p>
+    </div>
+    </span>
+        </div>
+</div>
+    </center>
 
